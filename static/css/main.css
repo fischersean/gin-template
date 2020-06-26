@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    vertical-align: middle;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: xx-large;
+    letter-spacing: 3px;
+    margin: 10px;
+    text-align: center;
+}
+h2{
+    font-size: xxx-large;
+    margin: 10px;
+    text-align: center;
+}
+.strikethrough{
+    text-decoration: line-through;
+}
+#app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media(max-width: 950px){
+    #app{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 650px){
+    #app{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+.month{
+    margin: 20px;
+    cursor: pointer;
+}
+.monthGrid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.day{
+    padding: 5px;
+    font-size: large;
+    text-align: center;
+}
+footer{
+    margin-top: 100px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
